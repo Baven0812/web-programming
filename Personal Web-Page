@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="BAVEN BIJU">
+    <meta name="description" content="A personal webpage showcasing information about me.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAVEN BIJU</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+
+       
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        #profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            transition: background-color 0.5s ease;
+        }
+
+        #profile-pic:hover {
+            background-color: #555;
+        }
+
+       
+        h2 {
+            color: #00FFFF; 
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+            color: white;
+        }
+
+        
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: center;
+            color: white;
+        }
+
+        th {
+            background-color: #00FFFF; 
+            color: black; 
+        }
+
+       
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #00FFFF;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00cccc; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+        <a href="https://www.yoursocialmedia.com" target="_blank">
+            <img src="profilephoto.jpg" alt="BAVEN BIJU" id="profile-pic">
+        </a>
+    </header>
+
+   
+    <section>
+        <h2>About Me</h2>
+        <p>Hello, I'm Baven Biju. I am passionate about web development, and I enjoy learning new technologies and researching . Here are some of my strengths and weaknesses:</p>
+        <ul>
+            <li>Strength: Strong problem-solving skills</li>
+            <li>Strength: Creativity and innovation</li>
+            <li>Weakness: Tendency to overthink</li>
+            <li>Weakness: Time management challenges</li>
+        </ul>
+    </section>
+
+   
+    <section>
+        <h2>My Bucket List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Visit Japan</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>Acquire liscense</td>
+                    <td></td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Learn a new language</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Write a book</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Run a marathon</td>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+   
+    <section>
+        <h2>Favourite Movie Clip</h2>
+        <video controls width="320" height="240">
+            <source src="movie-clip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Favourite Song</h2>
+        <audio controls>
+            <source src="favorite-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    
+    <section>
+        <button onclick="displayMessage()">Click Me!</button>
+    </section>
+
+    <script>
+        
+        function displayMessage() {
+            alert("Hello, welcome to my page!");
+        }
+
+        
+        document.getElementById('profile-pic').addEventListener('mouseover', function () {
+            document.body.style.backgroundColor = '#222'; 
+        });
+
+        document.getElementById('profile-pic').addEventListener('mouseout', function () {
+            document.body.style.backgroundColor = 'black'; 
+        });
+    </script>
+
+</body>
+
+</html>
