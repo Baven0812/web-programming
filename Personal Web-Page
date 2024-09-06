@@ -20,7 +20,7 @@
         }
 
        
-        header {
+        header {z
             background-color: #333;
             color: white;
             padding: 20px;
@@ -92,9 +92,9 @@
     
     <header>
         <h1>Welcome to My Personal Webpage</h1>
-        <a href="https://www.yoursocialmedia.com" target="_blank">
-            <img src="profilephoto.jpg" alt="BAVEN BIJU" id="profile-pic">
-        </a>
+        
+            <img src="photo.jpeg.jpeg" alt="BAVEN BIJU" id="profile-pic">
+      
     </header>
 
    
@@ -127,8 +127,8 @@
                     <td>Not Completed</td>
                 </tr>
                 <tr>
+                    <td>2</td>
                     <td>Acquire liscense</td>
-                    <td></td>
                     <td>Completed</td>
                 </tr>
                 <tr>
@@ -154,14 +154,14 @@
     <section>
         <h2>Favourite Movie Clip</h2>
         <video controls width="320" height="240">
-            <source src="movie-clip.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <source src="WhatsApp%20Video%202024-09-06%20at%201.42.52%20PM.mp4" type="video/mp4">
+          
         </video>
 
         <h2>Favourite Song</h2>
         <audio controls>
-            <source src="favorite-song.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag.
+            <source src="Bye-Bye-Bye(Mp3.Com.In).mp3" type="audio/mpeg">
+           
         </audio>
     </section>
 
