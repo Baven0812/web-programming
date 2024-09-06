@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIJU'S ORGANIC FARM SITE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px; /* Fixed padding syntax */
+            color: #333;
+            background: url('farmlandgifs.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(10, 0, 30, 1);
+            color: white;
+            padding: 10px; /* Adjusted padding */
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px;
+            width: calc(33% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+            transition: transform 0.3s ease;
+            padding: 15px; /* Added padding */
+            box-sizing: border-box;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-item img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-item h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+        .product-item p {
+            margin: 10px 0;
+        }
+        .product-item .details {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .product-item .details p {
+            margin: 5px 0;
+        }
+        .product-item button {
+            display: block;
+            width: calc(100% - 30px);
+            margin: 15px auto;
+            padding: 10px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product-item button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px; /* Adjusted padding */
+            position: fixed; /* Changed from absolute to fixed */
+            width: 100%;
+            bottom: 0;
+            z-index: 1000; /* Ensure it's on top of other content */
+        }
+        @media (max-width: 768px) {
+            .product-item {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .product-item {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style='color: darkcyan;font-style: inherit;font-size: 25px'>BIJU'S ORGANIC FARM ENTERPRISE</h1>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <h2 style="color: aqua">RED AND GREEN CHILLI</h2>
+                <p>Authentic Indian Dish Component</p>
+                <div class="details">
+                    <p><strong>Nutritional Value:</strong> 50 calories per serving</p>
+                    <p><strong>Health Benefits:</strong> Boosts immunity and energy</p>
+                    <p><strong>Medium of Cultivation:</strong> Organic soil, no pesticides</p>
+                    <p><strong>Medicinal Value:</strong> Known for its anti-inflammatory properties</p>
+                    <p><strong>MRP:</strong> $10.00</p>
+                    <p><strong>Customer Rating:</strong> ⭐⭐⭐⭐☆ (4.5/5)</p>
+                    <p><strong>Feedback:</strong> "Excellent quality and freshness!"</p>
+                </div>
+                <button onclick="addToCart('Product 1')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>PAPAYA FRUIT</h2>
+                <p>Fresh and Sweet Indian Papaya</p>
+                <div class="details">
+                    <p><strong>Nutritional Value:</strong> 60 calories per serving</p>
+                    <p><strong>Health Benefits:</strong> Rich in antioxidants</p>
+                    <p><strong>Medium of Cultivation:</strong> Hydroponics</p>
+                    <p><strong>Medicinal Value:</strong> Supports digestion</p>
+                    <p><strong>MRP:</strong> $15.00</p>
+                    <p><strong>Customer Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                    <p><strong>Feedback:</strong> "High quality, very fresh!"</p>
+                </div>
+                <button onclick="addToCart('Product 2')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>KOVAKKA</h2>
+                <p>Fresh and Organic Farm Raised Kovakka</p>
+                <div class="details">
+                    <p><strong>Nutritional Value:</strong> 40 calories per serving</p>
+                    <p><strong>Health Benefits:</strong> Boosts mental clarity</p>
+                    <p><strong>Medium of Cultivation:</strong> Organic farm</p>
+                    <p><strong>Medicinal Value:</strong> Good for stress relief</p>
+                    <p><strong>MRP:</strong> $12.00</p>
+                    <p><strong>Customer Rating:</strong> ⭐⭐⭐⭐ (4/5)</p>
+                    <p><strong>Feedback:</strong> "Great product, will buy again!"</p>
+                </div>
+                <button onclick="addToCart('Product 3')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Organic E-Commerce Site. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>
